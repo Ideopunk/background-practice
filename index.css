@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  background-color: grey;
+}
+
+article {
+  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg") no-repeat 0 0;
+}
+
+main > div:last-child {
+  display: flex;
+  width: 100%;
+}
+
+main > div:last-child > img {
+  height: auto;
+  width: 25%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+}
+
+footer > div:first-child {
+  height: 40px;
+  justify-content: space-between;
+}
+
+#sitelinks {
+  font-size: 10px;
+}
+
+#sitelinks > a::after {
+  content: " | ";
+}
+
+/*# sourceMappingURL=index.css.map */
