@@ -1,10 +1,94 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0088CC;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
+  align-self: center;
   display: flex;
   background-color: grey;
+  width: 70%;
+  border: 1px solid blue;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  color: white;
+}
+
+nav > * {
+  border: 1px solid red;
 }
 
 article {
   background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg") no-repeat 0 0;
+  background: url("http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg") no-repeat 0 0;
 }
 
 main > div:last-child {
@@ -18,8 +102,11 @@ main > div:last-child > img {
 }
 
 footer {
+  width: 70%;
+  align-self: center;
   display: flex;
   flex-direction: column;
+  font-size: 10px;
 }
 
 footer div {
@@ -29,10 +116,6 @@ footer div {
 footer > div:first-child {
   height: 40px;
   justify-content: space-between;
-}
-
-#sitelinks {
-  font-size: 10px;
 }
 
 #sitelinks > a::after {
